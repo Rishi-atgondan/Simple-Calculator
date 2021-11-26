@@ -1,3 +1,4 @@
+
 function dis(x) {
     if (document.getElementById("input").value == 0) {
         document.getElementById("input").value = "";
