@@ -1,20 +1,21 @@
 
 function dis(x) {
-    if (document.getElementById("input").value == 0) {
-        document.getElementById("input").value = "";
-        document.getElementById("input").value = x;
+    let element = document.getElementById("input");
+    if (element.value == 0) {
+        element.value = x;
     } else {
-        document.getElementById("input").value += x;
+        element.value = element.value + x;
     }
-
 }
 
 function solve() {
-    let x = document.getElementById("input").value;
-    let y = eval(x);
-    document.getElementById("input").value = y;
+    let element = document.getElementById("input")
+    let x = element.value;
+    element.value = eval(x);
 }
 
 function clean() {
     document.getElementById("input").value = 0;
 }
+
+
